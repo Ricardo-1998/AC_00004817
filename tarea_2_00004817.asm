@@ -61,6 +61,6 @@ lupita2:mov [si+210h],ax
 	cmp 	si,16d
 	jne	lupita2
 
-	
+	int	20h
 ;Fin ejericio 2--------------------------------------------------------
 
