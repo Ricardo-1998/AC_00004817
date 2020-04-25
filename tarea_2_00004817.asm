@@ -61,6 +61,36 @@ lupita2:mov [si+210h],ax
 	cmp 	si,16d
 	jne	lupita2
 
-	int	20h
+
 ;Fin ejericio 2--------------------------------------------------------
 
+;Inicio ejericio 3--------------------------------------------------------
+
+	mov 	si,0000h
+	mov 	ax,0000h
+	mov 	bx,0000h
+	mov 	bx,1d
+
+lupita3:mov [si+220h],ax
+	add 	ax,bx
+	mov	dx,ax
+	mov 	ax,bx
+	mov 	bx,dx
+	inc	si
+	
+	cmp	ax,100h
+	jb	lupita3
+
+lupita4:mov [si+220h],ax
+	add 	ax,bx
+	mov	dx,ax
+	mov 	ax,bx
+	mov 	bx,dx
+	inc	si
+	inc 	si
+	cmp 	si,16d
+	jne	lupita4
+
+
+	int	20h
+;Fin ejericio 3--------------------------------------------------------
